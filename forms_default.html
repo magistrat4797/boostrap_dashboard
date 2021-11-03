@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Coincher Dashboard</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="author" content="MediaCube">
+        <meta name="description" content="Your site description">
+        <meta name="keywords" content="">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/overwrite.css">
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    </head>
+
+    <body>
+        <div class="page-wrap">
+            <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom justify-content-between">
+                <div class="logo-col d-flex align-items-md-center">
+                    <a href="index.html"><img src="images/logo.png" alt="" style="height: 100%;"></a>
+                    <span class="logo-text">merchant panel</span>
+                </div>
+                <div class="account-col">
+                    <div class="account-dropdown-link" id="accountDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                        <div class="account-avatar-wrapper">
+                            <span class="account-avatar account-avatar-circle">
+                                <span class="account-avatar-string">T</span>
+                            </span>
+                        </div>
+                        <span class="account-name">test</span>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-right account-dropdown" aria-labelledby="accountDropdown">
+                        <div class="dropdown-item">
+                            <a class="btn btn-white btn-sm" href="#">Manage Your Account</a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-item">
+                            <a class="btn btn-sm" href="#">Dropdown action 2</a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-item dropdown-footer">
+                            <button type="button" class="btn btn-white btn-sm">Log out</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="d-flex" class="wrapper">
+
+                <!-- Sidebar -->
+                <div class="bg-white" id="sidebar-wrapper">
+                    <div class="sidebar-children border-right">
+                        <div class="list-group-flush">
+                            <ul class="sidebar-main-list list-group">
+                                <li class="list-group-item"><a href="index.html" class="list-group-item-action"><i class="nav-icon icon far fa-tachometer-alt"></i>Dashboard</a></li>
+                                <li class="list-line"></li>
+                                <li class="list-group-item">
+                                    <a class="list-group-item-action" data-toggle="collapse" href="#forms-menu"><i class="nav-icon icon far fa-edit"></i>Forms <i class="fas fa-angle-down right"></i></a>
+                                    <ul id="forms-menu" class="list-group panel-collapse collapse show">
+                                        <li class="list-group-item active"><a href="forms_default.html" class="list-group-item-action"><i class="nav-icon icon far fa-circle"></i>Default</a></li>
+                                        <li class="list-group-item"><a href="#" class="list-group-item-action"><i class="nav-icon icon far fa-circle"></i>Advanced</a></li>
+                                        <li class="list-group-item"><a href="#" class="list-group-item-action"><i class="nav-icon icon far fa-circle"></i>Optional</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-line"></li>
+                                <li class="list-group-item">
+                                    <a href="charts.html" class="list-group-item-action"><i class="nav-icon fas fa-chart-pie"></i>Charts</a>
+                                </li>
+                                <li class="list-line"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="sidebar-trigger" id="sidebarTrigger"><i class="icon fas fa-align-left"></i></span>
+                </div>
+                <!-- /#sidebar-wrapper -->
+
+                <!-- Page Content -->
+                <section class="content-wrapper">
+                    <main class="content-layout">
+                        <section class="content-header">
+                            <div class="breadcrumb-col col-12 col">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#" title="Home"><i class="nav-icon fas fa-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#">Not active</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Active</li>
+                                </ol>
+                            </div>
+                        </section>
+                        <section class="content">
+                            <div class="container-fluid">
+                                <div class="container-box d-flex flex-column flex-lg-row">
+                                    <div class="container-inner-box col-12 col-lg-6 col">
+                                        <div class="row">
+                                            <div class="col-12 col">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body">
+                                                            <span class="dashboard-card-title card-title">Quick example</span>
+                                                            <form method="POST" role="form">
+                                                                <div class="row">
+                                                                    <div class="col-12 col-sm-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Email address</label>
+                                                                            <input type="email" placeholder="Email" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Password</label>
+                                                                            <input type="password" placeholder="Password" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">File input</label>
+                                                                            <div class="input-group">
+                                                                                <div class="custom-file">
+                                                                                    <input type="file" placeholder="Email" class="custom-file-input">
+                                                                                    <label for="" class="custom-file-label">Choose file</label>
+                                                                                </div>
+                                                                                <div class="input-group-append">
+                                                                                    <span class="input-group-text">Upload</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col">
+                                                                        <button type="submit" class="d-block btn btn-default btn-blue btn-md mx-auto mb-2">Submit</button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body">
+                                                            <span class="dashboard-card-title card-title">Input Addon</span>
+                                                            <form method="POST" role="form">
+                                                                <div class="row">
+                                                                    <div class="col-12 col-sm-6 col-lg-12 col-xl-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Text prefix with info</label>
+                                                                            <p class="form-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-prepend">
+                                                                                    <span class="input-group-text">Prefix</span>
+                                                                                </div>
+                                                                                <input type="text" placeholder="Some text..." class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col-lg-12 col-xl-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Text suffix with info</label>
+                                                                            <div class="input-group">
+                                                                                <input type="text" placeholder="Some text..." class="form-control">
+                                                                                <div class="input-group-append">
+                                                                                    <span class="input-group-text">Suffix</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <p class="form-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Text prefix / suffix</label>
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-prepend">
+                                                                                    <span class="input-group-text">Prefix</span>
+                                                                                </div>
+                                                                                <input type="text" placeholder="Some text..." class="form-control">
+                                                                                <div class="input-group-append">
+                                                                                    <span class="input-group-text">Suffix</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col-lg-12 col-xl-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Icon prefix</label>
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-prepend">
+                                                                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                                                                </div>
+                                                                                <input type="text" placeholder="Some text..." class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col-lg-12 col-xl-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Icon suffix</label>
+                                                                            <div class="input-group">
+                                                                                <input type="text" placeholder="Some text..." class="form-control">
+                                                                                <div class="input-group-append">
+                                                                                    <span class="input-group-text"><i class="fas fa-check"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Icon prefix / suffix</label>
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-prepend">
+                                                                                    <span class="input-group-text"><i class="fas fa-car"></i></span>
+                                                                                </div>
+                                                                                <input type="text" placeholder="Some text..." class="form-control">
+                                                                                <div class="input-group-append">
+                                                                                    <span class="input-group-text"><i class="fas fa-plane"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col-lg-12 col-xl-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Button prefix</label>
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-prepend">
+                                                                                    <button type="button" class="btn btn-default btn-pink">Button
+                                                                                    </button>
+                                                                                </div>
+                                                                                <input type="text" placeholder="Some text..." class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col-lg-12 col-xl-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Button suffix</label>
+                                                                            <div class="input-group">
+                                                                                <input type="text" placeholder="Some text..." class="form-control">
+                                                                                <div class="input-group-append">
+                                                                                    <button type="button" class="btn btn-default btn-green">Button
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body">
+                                                            <span class="dashboard-card-title card-title">Buttons</span>
+                                                            <form method="POST" role="form" class="mb-1">
+                                                                <p class="form-info">Button colors</p>
+                                                                <button type="button" class="btn btn-default btn-red">.btn-red</button>
+                                                                <button type="button" class="btn btn-default btn-orange">.btn-orange</button>
+                                                                <button type="button" class="btn btn-default btn-green">.btn-green</button>
+                                                                <button type="button" class="btn btn-default btn-blue">.btn-blue</button>
+                                                                <button type="button" class="btn btn-default btn-pink">.btn-pink</button>
+                                                                <button type="button" class="btn btn-default btn-white">.btn-white</button>
+                                                            </form>
+                                                            <form method="POST" role="form" class="mb-1">
+                                                                <p class="form-info">Button sizes</p>
+                                                                <button type="button" class="btn btn-default btn-blue">.btn-default</button>
+                                                                <button type="button" class="btn btn-default btn-blue btn-md">.btn-md</button>
+                                                                <button type="button" class="btn btn-default btn-blue btn-sm">.btn-sm</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container-inner-box col-12 col-lg-6 col">
+                                        <div class="row">
+                                            <div class="col-12 col">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body">
+                                                            <span class="dashboard-card-title card-title">General elements</span>
+                                                            <form method="POST" role="form">
+                                                                <div class="row">
+                                                                    <div class="col-12 col-sm-6 col-lg-12 col-xl-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Text input active</label>
+                                                                            <input type="text" placeholder="Some text..." class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col-lg-12 col-xl-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Text input disable</label>
+                                                                            <input type="text" placeholder="Some text..." class="form-control" disabled>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col-lg-12 col-xl-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Textarea active</label>
+                                                                            <textarea type="text" placeholder="Some text..." class="form-control"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col-lg-12 col-xl-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Textarea disable with resize</label>
+                                                                            <textarea type="text" placeholder="Some text..." class="form-control" disabled></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col-lg-12 col-xl-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Textarea active without resize</label>
+                                                                            <textarea type="text" placeholder="Some text..." class="form-control no-resize"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col-lg-12 col-xl-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Textarea disable without resize</label>
+                                                                            <textarea type="text" placeholder="Some text..." class="form-control no-resize" disabled></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body">
+                                                            <span class="dashboard-card-title card-title">Notifications</span>
+                                                            <div class="notification error">
+                                                                This is a error notification - default (left)
+                                                            </div>
+                                                            <div class="notification alert text-center">
+                                                                This is a alert notification - centered
+                                                            </div>
+                                                            <div class="notification success text-left">
+                                                                This is a success notification - lefted
+                                                            </div>
+                                                            <div class="notification info text-right">
+                                                                This is a info notification - righted
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body">
+                                                            <span class="dashboard-card-title card-title">Custom elements</span>
+                                                            <form method="POST" role="form">
+                                                                <div class="row">
+                                                                    <div class="col-12 col-sm-6 col mb-2">
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" class="custom-control-input" id="checkbox1">
+                                                                            <label class="custom-control-label" for="checkbox1"></label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" class="custom-control-input" id="checkbox2" checked>
+                                                                            <label class="custom-control-label" for="checkbox2">With Label Checked</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-checkbox">
+                                                                            <input type="checkbox" class="custom-control-input" id="checkbox3" disabled>
+                                                                            <label class="custom-control-label" for="checkbox3">With Label Disabled</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col mb-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input type="radio" class="custom-control-input" id="radio1">
+                                                                            <label class="custom-control-label" for="radio1"></label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input type="radio" class="custom-control-input" id="radio2" checked>
+                                                                            <label class="custom-control-label" for="radio2">With Label Checked</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input type="radio" class="custom-control-input radio" id="radio3" disabled>
+                                                                            <label class="custom-control-label" for="radio3">With Label Disabled</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Custom Select</label>
+                                                                            <select class="custom-select">
+                                                                                <option>option 1</option>
+                                                                                <option>option 2</option>
+                                                                                <option>option 3</option>
+                                                                                <option>option 4</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Custom Select Disabled</label>
+                                                                            <select class="custom-select" disabled>
+                                                                                <option>option 1</option>
+                                                                                <option>option 2</option>
+                                                                                <option>option 3</option>
+                                                                                <option>option 4</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Custom Select</label>
+                                                                            <select class="custom-select" multiple size="3">
+                                                                                <option>option 1</option>
+                                                                                <option>option 2</option>
+                                                                                <option>option 3</option>
+                                                                                <option>option 4</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col">
+                                                                        <div class="form-group">
+                                                                            <label for="">Custom Select Disabled</label>
+                                                                            <select class="custom-select" multiple disabled size="3">
+                                                                                <option>option 1</option>
+                                                                                <option>option 2</option>
+                                                                                <option>option 3</option>
+                                                                                <option>option 4</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col">
+                                                                        <div class="form-group">
+                                                                            <div class="custom-control custom-switch">
+                                                                              <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                                              <label class="custom-control-label" for="customSwitch1">Element with custom toggle switch</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6 col">
+                                                                        <div class="form-group">
+                                                                            <div class="custom-control custom-switch">
+                                                                              <input type="checkbox" class="custom-control-input" id="customSwitch2" disabled>
+                                                                              <label class="custom-control-label" for="customSwitch2">Element with disable custom toggle switch</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                    <section class="content-footer d-flex justify-content-center flex-wrap">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <span>Coincher © 2020</span>
+                    </section>
+                </section>
+            </div>
+
+        <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+        <script type="text/javascript" src="js/img2svg.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+    </body>
+</html>

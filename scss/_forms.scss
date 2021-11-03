@@ -1,0 +1,316 @@
+@charset "UTF-8";
+@import 'libs/_lib';
+
+button.btn-selectpicker, 
+button.btn-selectpicker.form-control, 
+input[type="text"], 
+input[type="text"].form-control, 
+input[type="number"], 
+input[type="number"].form-control, 
+input[type="search"], 
+input[type="search"].form-control, 
+input[type="password"], 
+input[type="password"].form-control, 
+input[type="email"], 
+input[type="email"].form-control, 
+input[type="color"], 
+input[type="color"].form-control,
+select, 
+select.form-control, 
+select.custom-select, 
+textarea, 
+textarea.form-control {
+    padding: 0 15px;
+    border-radius: 3px;
+    @include eqbox(35px);
+    border: 1px solid #C7C7C7;
+    background-color: $input-background-color;
+    color: $base-color;
+    font-size: 14px;
+    @include outline-remove;
+    @include placeholder {
+        color: #8F8F8F;
+    }
+    &:not(select) {
+        &:focus {
+            border-color: $theme-color-1;
+            color: $theme-color-1;
+        }
+    }
+    &:disabled {
+        cursor: not-allowed;
+        background-color: #e9ecef;
+    }
+}
+input[type="number"], 
+input[type="number"].form-control {
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none; 
+        margin: 0;
+    }
+}
+
+textarea, 
+textarea.form-control {
+    height: auto;
+    min-height: 120px;
+    resize: vertical;
+    line-height: 1.2;
+    padding: 10px 15px;
+    &.no-resize {
+        resize: none;
+    }
+}
+select, select[multiple] {
+    &.form-control, &.custom-select {
+        &:focus {
+            border-color: #C7C7C7;
+        }
+    }
+}
+select[multiple], 
+select[multiple].form-control,
+select[multiple].custom-select,
+select.custom-select[size]:not([size="1"]) {
+    padding: 4px 0;
+    option {
+        padding: 2px 15px;
+    }
+}
+input.hidden-field {
+    display: none;
+}
+
+.input-group-text {
+    font-size: $base-font-size;   
+}
+.form-info {
+    margin-bottom: 8px;
+    font-size: 13px;
+    line-height: 1.25;
+}
+
+.input-group {
+    margin-bottom: 8px;
+    .input-group-prepend, .input-group-append {
+        .input-group-text {
+            background-color: $wrapper-bg-color;
+            border-color: #C7C7C7;
+        }
+    }
+    .btn {
+        font-size: 14px;
+    }
+}
+
+.custom-file {
+    .custom-file-label {
+        border-color: #C7C7C7;
+        &:after {
+            background-color: $wrapper-bg-color;
+        }
+    }
+}
+
+.form-col {
+    form,
+    .pseudo-form {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 700px;
+        margin: 0 auto;
+        > .row {
+            flex-basis: 100%;
+
+        }
+
+    }
+
+}
+
+.form-block {
+    &.-edit-profile {
+        display: flex;
+        width: 100%;
+
+    }
+
+}
+
+.form-item {
+    flex: 0 1 auto;
+    margin-bottom: 15px;
+    position: relative;
+    &.-full {
+        flex-basis: 100%;
+
+    }
+    &.-half {
+        flex-basis: 100%;
+        @media(min-width: 768px) {
+            flex-basis: 50%;
+
+        }
+
+    }
+    &.-link {
+        flex-basis: 100%;
+        text-align: center;
+        a {
+            display: block;
+            color: $theme-color-1;
+            font-weight: 700;
+            font-size: 13px;
+            &:hover {
+                color: lighten($theme-color-1, 10%);
+
+            }
+            & + a,
+            & + .btn {
+                margin-top: 10px;
+
+            }
+
+        }
+
+    }
+    &.-actions {
+        flex-basis: 100%;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 0;
+        .btn {
+            @include eqbox(40px);
+            & + .btn {
+                margin-left: 10px;
+
+            }
+
+        }
+
+    }
+    > label, > .label {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        color: #8f8f8f;
+        line-height: 1;
+
+    }
+
+}
+
+.switch {
+    display: block;
+    &.-inline {
+        display: inline-block;
+        & + .-inline {
+            margin-left: 15px;
+
+        }
+
+    }
+    label {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        margin: 0;
+        input[type="checkbox"],
+        input[type="radio"] {
+            position: absolute;
+            width: 0;
+            height: 0;
+            visibility: hidden;
+
+        }
+        .sub-label {
+            position: relative;
+            padding-left: 46px;
+            display: block;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: lighten(#262626, 20%);
+                border-radius: 20em;
+                height: 20px;
+                width: 36px;
+                transition: background-color $trans-time $trans-type;
+
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                left: 2px;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+                background-color: #8F8F8F;
+                height: 16px;
+                width: 16px;
+                transition: background-color $trans-time $trans-type, left $trans-time $trans-type;
+
+            }
+
+        }
+        input[type="checkbox"]:checked + .sub-label::before,
+            input[type="radio"]:checked + .sub-label::before {
+            background-color: #262626;
+
+        }
+        input[type="checkbox"]:checked + .sub-label::after,
+            input[type="radio"]:checked + .sub-label::after {
+            background-color: $theme-color-1;
+            left: 18px;
+
+        }
+
+    }
+
+}
+
+
+.dropdown-toggle:after {
+    vertical-align: middle;
+}
+
+.bootstrap-select {
+    select {
+        display: none;
+
+    }
+    > .dropdown-toggle {
+        position: relative;
+
+
+    }
+    .dropdown-menu {
+        background-color: #ffffff;
+        &.inner {
+            display: block;
+
+        }
+        &.show {
+            display: block;
+
+        }
+        a {
+            font-size: 14px;
+            font-weight: 400;
+            color: #333333;
+            text-transform: none;
+            &:hover {
+                color: #333333;
+                background-color: $gray;
+
+            }
+
+        }
+
+    }
+
+}

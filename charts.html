@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Coincher Dashboard</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="author" content="MediaCube">
+        <meta name="description" content="Your site description">
+        <meta name="keywords" content="">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/overwrite.css">
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    </head>
+
+    <body>
+        <div class="page-wrap">
+            <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom justify-content-between">
+                <div class="logo-col d-flex align-items-md-center">
+                    <a href="index.html"><img src="images/logo.png" alt="" style="height: 100%;"></a>
+                    <span class="logo-text">merchant panel</span>
+                </div>
+                <div class="account-col">
+                    <div class="account-dropdown-link" id="accountDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                        <div class="account-avatar-wrapper">
+                            <span class="account-avatar account-avatar-circle">
+                                <span class="account-avatar-string">T</span>
+                            </span>
+                        </div>
+                        <span class="account-name">test</span>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-right account-dropdown" aria-labelledby="accountDropdown">
+                        <div class="dropdown-item">
+                            <a class="btn btn-white btn-sm" href="#">Manage Your Account</a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-item">
+                            <a class="btn btn-sm" href="#">Dropdown action 2</a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-item dropdown-footer">
+                            <button type="button" class="btn btn-white btn-sm">Log out</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="d-flex" class="wrapper">
+
+                <!-- Sidebar -->
+                <div class="bg-white" id="sidebar-wrapper">
+                    <div class="sidebar-children border-right">
+                        <div class="list-group-flush">
+                            <ul class="sidebar-main-list list-group">
+                                <li class="list-group-item"><a href="index.html" class="list-group-item-action"><i class="nav-icon icon far fa-tachometer-alt"></i>Dashboard</a></li>
+                                <li class="list-line"></li>
+                                <li class="list-group-item">
+                                    <a class="list-group-item-action collapsed" data-toggle="collapse" href="#forms-menu"><i class="nav-icon icon far fa-edit"></i>Forms <i class="fas fa-angle-down right"></i></a>
+                                    <ul id="forms-menu" class="list-group panel-collapse collapse">
+                                        <li class="list-group-item"><a href="forms_default.html" class="list-group-item-action"><i class="nav-icon icon far fa-circle"></i>Default</a></li>
+                                        <li class="list-group-item"><a href="#" class="list-group-item-action"><i class="nav-icon icon far fa-circle"></i>Advanced</a></li>
+                                        <li class="list-group-item"><a href="#" class="list-group-item-action"><i class="nav-icon icon far fa-circle"></i>Optional</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-line"></li>
+                                <li class="list-group-item active">
+                                    <a href="charts.html" class="list-group-item-action"><i class="nav-icon fas fa-chart-pie"></i>Charts</a>
+                                </li>
+                                <li class="list-line"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="sidebar-trigger" id="sidebarTrigger"><i class="icon fas fa-align-left"></i></span>
+                </div>
+                <!-- /#sidebar-wrapper -->
+
+                <!-- Page Content -->
+                <section class="content-wrapper">
+                    <main class="content-layout">
+                        <section class="content-header">
+                            <div class="breadcrumb-col col-12 col">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#" title="Home"><i class="nav-icon fas fa-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#">Not active</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Active</li>
+                                </ol>
+                            </div>
+                        </section>
+                        <section class="content">
+                            <div class="container-fluid">
+                                <div class="container-box d-flex flex-column flex-lg-row">
+                                    <div class="container-inner-box col-12 col-lg-6 col">
+                                        <div class="row">
+                                            <div class="col-12 col">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body">
+                                                            <span class="dashboard-card-title card-title">Example Chart 1</span>
+                                                            <canvas id="example_chart1" class="chart"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container-inner-box col-12 col-lg-6 col">
+                                        <div class="row">
+                                            <div class="col-12 col">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body">
+                                                            <span class="dashboard-card-title card-title">Example Chart 2</span>
+                                                            <canvas id="example_chart2" class="chart"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                    <section class="content-footer d-flex justify-content-center flex-wrap">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <span>Coincher © 2020</span>
+                    </section>
+                </section>
+            </div>
+
+        <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+        <script type="text/javascript" src="js/img2svg.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+    </body>
+</html>

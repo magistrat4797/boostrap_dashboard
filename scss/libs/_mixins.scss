@@ -1,0 +1,94 @@
+@import "../libs/_functions";
+@import "../libs/_settings";
+
+//czyszczenie elementu
+@mixin clear {
+    clear: both;
+    &::before, 
+    &::after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+}
+//usuniecie czyszczenia
+@mixin noclear {
+    clear: none;
+    &::before, 
+    &::after {
+        display: none;
+        clear: none;
+    }
+}
+
+@mixin reset_list {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        list-style-image: none;
+    }
+}
+
+@mixin eqbox($value,$offset:0) {
+    height: $value;
+    line-height: $value - $offset;
+}
+
+@mixin outline-remove {
+    outline: 0;
+    outline-style: none;
+    &:focus, 
+    &:active {
+        outline: 0;
+        outline-style: none;
+        box-shadow: none;
+    }
+}
+
+@mixin ellipsis() {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+//wertykalny z gory na dol
+@mixin gradient($start_color, $end_color) {
+    background: $start_color;
+    background: -webkit-linear-gradient(to bottom,  $start_color 0%,$end_color 100%);
+    background: linear-gradient(to bottom,  $start_color 0%,$end_color 100%);
+}
+//horyzontalny z lewej do prawej
+@mixin hgradient($start_color, $end_color) {
+    background: $start_color;
+    background: -webkit-linear-gradient(to right,  $start_color 0%,$end_color 100%);
+    background: linear-gradient(to right,  $start_color 0%,$end_color 100%);
+}
+//ukosny z gory z lewej do dolu prawej
+@mixin d1gradient($start_color, $end_color) {
+    background: $start_color;
+    background: -webkit-linear-gradient(135deg,  $start_color 0%,$end_color 100%);
+    background: linear-gradient(135deg,  $start_color 0%,$end_color 100%);
+}
+//ukosny z dolu z lewej do gory prawej
+@mixin d2gradient($start_color, $end_color) {
+    background: $start_color;
+    background: -webkit-linear-gradient(45deg,  $start_color 0%,$end_color 100%);
+    background: linear-gradient(45deg,  $start_color 0%,$end_color 100%);
+}
+//okragly
+@mixin radgradient($start_color, $end_color) {
+    background: $start_color;
+    background: -webkit-radial-gradient(ellipse at center,  $start_color 0%,$end_color 100%);
+    background: radial-gradient(ellipse at center,  $start_color 0%,$end_color 100%);
+}
+
+//stylowanie placeholderow
+@mixin placeholder {
+    &:-moz-placeholder            {opacity:1; @content } // Firefox 4-18
+    &::-moz-placeholder           {opacity:1; @content } // Firefox 19+
+    &:-ms-input-placeholder       {opacity:1; @content } // Internet Explorer 10+
+    &::-webkit-input-placeholder  {opacity:1; @content } // Safari and Chrome
+}

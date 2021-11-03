@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import "../libs/_lib";
+
+/* Tiny Scrollbar */
+.-scrollbar { 
+    touch-action: none;
+    .viewport { 
+        overflow: hidden; 
+        position: relative; 
+        min-height: 100%;
+        margin-top: 10px;
+        margin-right: 5px;
+    
+    }
+    .overview { 
+        list-style: none; 
+        position: absolute; 
+        left: 0; 
+        top: 0; 
+        padding: 0; 
+        margin: 0; 
+        width: 100%;
+        transition: top $trans-time $trans-type;
+    
+    }
+    .scrollbar { 
+        position: relative; 
+        background-position: 0 0; 
+        float: right; 
+        width: 5px; 
+    
+    }
+    .track { 
+        height: 100%; 
+        width: 5px; 
+        position: relative; 
+        padding: 0 1px;
+        background-color: #393939;
+        .thumb {
+            background-color: $theme-color-1;
+            position: absolute;
+            width: 5px;
+            left: 0;
+            transition: top $trans-time $trans-type;
+            
+        }
+    
+    }
+    .disable { 
+        display: none; 
+    
+    }
+    
+}
+
+.noSelect { 
+    user-select: none; 
+    -o-user-select: none; 
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+
+}

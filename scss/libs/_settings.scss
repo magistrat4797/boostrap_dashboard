@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+// VALUES
+//-----------------------
+$col-padding: 6px;
+$wrapper-width: 970px + (2 * $col-padding);
+$wrapper-mid-width: 1130px + (2 * $col-padding);
+$wrapper-big-width: 1390px + (2 * $col-padding);
+$wrapper-blog-top: 1690px + (2 * $col-padding);
+
+$base-font: "Open Sans", Arial, Helvetica, Sans serif;
+$header-font: "Open Sans", Arial, Helvetica, Sans serif;
+$font-muli: "Muli", Arial, Helvetica, Sans serif;
+$font-opensans: "Open Sans", Arial, Helvetica, Sans serif;
+$base-font-size: 14px;
+
+$trans-time: .3s;
+$trans-type: ease 0s;
+
+$border-radius: 4px;
+
+// COLORS 
+//-----------------------
+$theme-color-1: #1B42CB;
+$theme-color-2: #FF2F6C;
+
+$base-color: rgba(0,0,0,.65);
+$base-background-color: #ffffff;
+$wrapper-bg-color: #F0F2F5;
+
+
+$link-color: #1B42CB;
+$link-hover-color: $theme-color-1;
+
+$btn-color: #ffffff;
+$btn-hover-color: #ffffff;
+$btn-bg-color: #1B42CB;
+$btn-hover-bg-color: darken($btn-bg-color, 10%);
+
+$input-background-color: #ffffff;
+
+$white: #ffffff;
+$black: #000000;
+$gray: #f0f0f0;

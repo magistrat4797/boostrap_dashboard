@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Coincher Dashboard</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="author" content="MediaCube">
+        <meta name="description" content="Your site description">
+        <meta name="keywords" content="">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/overwrite.css">
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    </head>
+
+    <body>
+        <div class="page-wrap">
+            <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom justify-content-between">
+                <div class="logo-col d-flex align-items-md-center">
+                    <a href="index.html"><img src="images/logo.png" alt="" style="height: 100%;"></a>
+                    <span class="logo-text">merchant panel</span>
+                </div>
+                <div class="account-col">
+                    <div class="account-dropdown-link" id="accountDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                        <div class="account-avatar-wrapper">
+                            <span class="account-avatar account-avatar-circle">
+                                <span class="account-avatar-string">T</span>
+                            </span>
+                        </div>
+                        <span class="account-name">test</span>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-right account-dropdown" aria-labelledby="accountDropdown">
+                        <div class="dropdown-item">
+                            <a class="btn btn-white btn-sm" href="#">Manage Your Account</a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-item">
+                            <a class="btn btn-sm" href="#">Dropdown action 2</a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-item dropdown-footer">
+                            <button type="button" class="btn btn-white btn-sm">Log out</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="d-flex" class="wrapper">
+
+                <!-- Sidebar -->
+                <div class="bg-white" id="sidebar-wrapper">
+                    <div class="sidebar-children border-right">
+                        <div class="list-group-flush">
+                            <ul class="sidebar-main-list list-group">
+                                <li class="list-group-item active"><a href="index.html" class="list-group-item-action"><i class="nav-icon icon far fa-tachometer-alt"></i>Dashboard</a></li>
+                                <li class="list-line"></li>
+                                <li class="list-group-item">
+                                    <a class="list-group-item-action collapsed" data-toggle="collapse" href="#forms-menu"><i class="nav-icon icon far fa-edit"></i>Forms <i class="fas fa-angle-down right"></i></a>
+                                    <ul id="forms-menu" class="list-group panel-collapse collapse">
+                                        <li class="list-group-item"><a href="forms_default.html" class="list-group-item-action"><i class="nav-icon icon far fa-circle"></i>Default</a></li>
+                                        <li class="list-group-item"><a href="#" class="list-group-item-action"><i class="nav-icon icon far fa-circle"></i>Advanced</a></li>
+                                        <li class="list-group-item"><a href="#" class="list-group-item-action"><i class="nav-icon icon far fa-circle"></i>Optional</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-line"></li>
+                                <li class="list-group-item">
+                                    <a href="charts.html" class="list-group-item-action"><i class="nav-icon fas fa-chart-pie"></i>Charts</a>
+                                </li>
+                                <li class="list-line"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="sidebar-trigger" id="sidebarTrigger"><i class="icon fas fa-align-left"></i></span>
+                </div>
+                <!-- /#sidebar-wrapper -->
+
+                <!-- Page Content -->
+                <section class="content-wrapper">
+                    <main class="content-layout">
+                        <section class="content-header">
+                            <div class="breadcrumb-col col-12 col">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#" title="Home"><i class="nav-icon fas fa-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#">Not active</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Active</li>
+                                </ol>
+                            </div>
+                        </section>
+                        <section class="content">
+                            <div class="container-fluid">
+                                <div class="container-box d-flex flex-column flex-lg-row">
+                                    <div class="container-inner-box col -left">
+                                        <div class="row">
+                                            <div class="col-12 col">
+                                                <div class="dashboard-card card">
+                                                    <div class="dashboard-card-body card-body">
+                                                        <span class="dashboard-card-title card-title">Quick Start</span>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6 col-xxl-3 col p-0 d-flex justify-content-center quick-links">
+                                                                <a href="#" class="d-flex m-3">
+                                                                    <span class="icon"><i class="fas fa-lock"></i></span>
+                                                                    <span class="sub-info">
+                                                                        <span class="sub-title">
+                                                                            Lorem ipsum dolor
+                                                                        </span>
+                                                                        <span class="sub-desc">
+                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                                        </span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6 col-xxl-3 col p-0 d-flex justify-content-center quick-links">
+                                                                <a href="#" class="d-flex m-3">
+                                                                    <span class="icon"><i class="fas fa-id-card"></i></span>
+                                                                    <span class="sub-info">
+                                                                        <span class="sub-title">
+                                                                            Lorem ipsum dolor
+                                                                        </span>
+                                                                        <span class="sub-desc">
+                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                                        </span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6 col-xxl-3 col p-0 d-flex justify-content-center quick-links">
+                                                                <a href="#" class="d-flex m-3">
+                                                                    <span class="icon"><i class="fas fa-charging-station"></i></span>
+                                                                    <span class="sub-info">
+                                                                        <span class="sub-title">
+                                                                            Lorem ipsum dolor
+                                                                        </span>
+                                                                        <span class="sub-desc">
+                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                                        </span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 col-md-3 col-lg-12 col-xl-6 col-xxl-3 col p-0 d-flex justify-content-center quick-links">
+                                                                <a href="#" class="d-flex m-3">
+                                                                    <span class="icon"><i class="fas fa-rocket"></i></span>
+                                                                    <span class="sub-info">
+                                                                        <span class="sub-title">
+                                                                            Lorem ipsum dolor
+                                                                        </span>
+                                                                        <span class="sub-desc">
+                                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                                        </span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- Not empty table -->
+                                            <div class="col-12 col">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-tabs-col">
+                                                        <ul class="dashboard-tabs nav nav-tabs">
+                                                            <li class="active"><a href="#" role="tabs">Tab 1</a></li>
+                                                            <li><a href="#" role="tabs">Tab 2</a></li>
+                                                            <li><a href="#" role="tabs">Tab 3</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body tab-content">
+                                                            <div class="dashboard-card-container tab-pane active">
+                                                                <span class="dashboard-card-title card-title">Merchant Orders</span>
+                                                                <form method="POST" role="form">
+                                                                    <a href="#" class="btn btn-default btn-md btn-blue mb-3" data-toggle="modal" data-target="#scrollableModal"><span class="icon-holder mr-1"><i class="fas fa-plus"></i></span>Modal scrollable</a>
+                                                                    <div class="table table-default mb-2">
+                                                                        <div class="table-content">
+                                                                                <div class="table-body table-responsive">
+                                                                                    <table cellspacing="0" width="100%">
+                                                                                        <thead class="table-thead">
+                                                                                            <tr>
+                                                                                                <th class="sorting -asc">
+                                                                                                    <span class="table-column-title">ID</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting -desc">
+                                                                                                    <span class="table-column-title">Type</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting">
+                                                                                                    <span class="table-column-title">Title</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting">
+                                                                                                    <span class="table-column-title">Price</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting">
+                                                                                                    <span class="table-column-title">Status</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th>
+                                                                                                    <span class="table-column-title"></span>
+                                                                                                </th>
+                                                                                                <th>
+                                                                                                    <span class="table-column-title">
+                                                                                                        <div class="custom-control custom-checkbox">
+                                                                                                            <input type="checkbox" class="custom-control-input selectall" id="check-select-all-1" name="selectall-1" data-checkbox-name="select-1">
+                                                                                                            <label class="custom-control-label" for="check-select-all-1"></label>
+                                                                                                        </div>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody class="table-tbody">
+                                                                                            <tr>
+                                                                                                <td>12345</td>
+                                                                                                <td>Test type</td>
+                                                                                                <td>Lorem ipsum</td>
+                                                                                                <td>12345 BTC</td>
+                                                                                                <td>W trakcie</td>
+                                                                                                <td>
+                                                                                                    <a href="#" class="btn-action"><span class="icon"></span></a>
+                                                                                                    <a href="#" class="btn-action"><span class="icon"></span></a>
+                                                                                                    <a href="#" class="btn-action"><span class="icon"></span></a>
+                                                                                                    <a href="#" class="btn-action"><span class="icon"></span></a>
+                                                                                                    <a href="#" class="btn-action"><span class="icon"></span></a>
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    <div class="custom-control custom-checkbox">
+                                                                                                        <input type="checkbox" class="select-1 custom-control-input checkme" id="checkbox1" data-select-all="selectall-1" name="select-1">
+                                                                                                        <label class="custom-control-label" for="checkbox1"></label>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>12345</td>
+                                                                                                <td>Test type</td>
+                                                                                                <td>Lorem ipsum</td>
+                                                                                                <td>12345 BTC</td>
+                                                                                                <td>W trakcie</td>
+                                                                                                <td class="table-links">
+                                                                                                    <a href="#" class="btn btn-action btn-success"><i class="fas fa-key"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-blue"><i class="fas fa-cube"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-blue"><i class="fas fa-comment"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-blue"><i class="fas fa-history"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-orange"><i class="fas fa-pencil-alt"></i></a>
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    <div class="custom-control custom-checkbox">
+                                                                                                        <input type="checkbox" class="select-1 custom-control-input checkme" id="checkbox2" data-select-all="selectall-1" name="select-1">
+                                                                                                        <label class="custom-control-label" for="checkbox2"></label>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div class="table-placeholder">
+                                                                                    <div class="table-actions d-flex justify-content-between flex-column flex-sm-row flex-wrap">
+                                                                                        <div class="table-selects d-flex my-2 mb-sm-0">
+                                                                                            <select name="" id="">
+                                                                                                <option value="">Option 1</option>
+                                                                                                <option value="">Option 2</option>
+                                                                                                <option value="">Option 3</option>
+                                                                                            </select>
+                                                                                            <select name="" id="">
+                                                                                                <option value="">Lorem ipsum dolor</option>
+                                                                                                <option value="">Option 2</option>
+                                                                                                <option value="">Option 3</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <button type="submit" class="btn btn-default btn-blue btn-md mx-auto mx-sm-0 mt-2">Submit</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="dashboard-card-container tab-pane">
+                                                                <span class="dashboard-card-title card-title">Merchant Orders 2</span>
+                                                                <form method="POST" role="form">
+                                                                    <a href="#" class="btn btn-default btn-md btn-blue mb-3" data-toggle="modal" data-target="#tableModal"><span class="icon-holder mr-1"><i class="fas fa-plus"></i></span>Modal table</a>
+                                                                    <div class="table table-default mb-2">
+                                                                        <div class="table-content">
+                                                                                <div class="table-body table-responsive">
+                                                                                    <table cellspacing="0" width="100%">
+                                                                                        <thead class="table-thead">
+                                                                                            <tr>
+                                                                                                <th class="sorting -asc">
+                                                                                                    <span class="table-column-title">ID</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting -desc">
+                                                                                                    <span class="table-column-title">Type</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting">
+                                                                                                    <span class="table-column-title">Title</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting">
+                                                                                                    <span class="table-column-title">Price</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting">
+                                                                                                    <span class="table-column-title">Status</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th>
+                                                                                                    <span class="table-column-title"></span>
+                                                                                                </th>
+                                                                                                <th>
+                                                                                                    <span class="table-column-title">
+                                                                                                        <div class="custom-control custom-checkbox">
+                                                                                                            <input type="checkbox" class="custom-control-input selectall" id="check-select-all-2" name="selectall-2" data-checkbox-name="select-2">
+                                                                                                            <label class="custom-control-label" for="check-select-all-2"></label>
+                                                                                                        </div>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody class="table-tbody">
+                                                                                            <tr>
+                                                                                                <td>56789</td>
+                                                                                                <td>Test type 2</td>
+                                                                                                <td>Lorem ipsum 2</td>
+                                                                                                <td>56789 BTC</td>
+                                                                                                <td>W trakcie 2</td>
+                                                                                                <td class="table-links">
+                                                                                                    <a href="#" class="btn btn-action btn-success"><i class="fas fa-key"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-blue"><i class="fas fa-cube"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-blue"><i class="fas fa-comment"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-blue"><i class="fas fa-history"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-orange"><i class="fas fa-pencil-alt"></i></a>
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    <div class="custom-control custom-checkbox">
+                                                                                                        <input type="checkbox" class="select-2 custom-control-input checkme" id="checkbox12" data-select-all="selectall-2" name="select-2">
+                                                                                                        <label class="custom-control-label" for="checkbox12"></label>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>56789</td>
+                                                                                                <td>Test type 2</td>
+                                                                                                <td>Lorem ipsum 2</td>
+                                                                                                <td>56789 BTC</td>
+                                                                                                <td>W trakcie 2</td>
+                                                                                                <td></td>
+                                                                                                <td>
+                                                                                                    <div class="custom-control custom-checkbox">
+                                                                                                        <input type="checkbox" class="select-2 custom-control-input checkme" id="checkbox22" data-select-all="selectall-2" name="select-2">
+                                                                                                        <label class="custom-control-label" for="checkbox22"></label>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div class="table-placeholder">
+                                                                                    <div class="table-actions d-flex justify-content-between flex-column flex-sm-row flex-wrap">
+                                                                                        <div class="table-selects d-flex my-2 mb-sm-0">
+                                                                                            <select name="" id="">
+                                                                                                <option value="">Option 1</option>
+                                                                                                <option value="">Option 2</option>
+                                                                                                <option value="">Option 3</option>
+                                                                                            </select>
+                                                                                            <select name="" id="">
+                                                                                                <option value="">Lorem ipsum dolor</option>
+                                                                                                <option value="">Option 2</option>
+                                                                                                <option value="">Option 3</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <button type="submit" class="btn btn-default btn-blue btn-md mx-auto mx-sm-0 mt-2">Submit</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="dashboard-card-container tab-pane">
+                                                                <span class="dashboard-card-title card-title">Merchant Orders 3</span>
+                                                                <a href="#" class="btn btn-default btn-md btn-blue mb-3" data-toggle="modal" data-target=".formModal"><span class="icon-holder mr-1"><i class="fas fa-plus"></i></span>Modal form</a>
+                                                                <div class="table table-default table-empty">
+                                                                    <div class="table-content">
+                                                                        <div class="table-body table-responsive">
+                                                                            <table>
+                                                                                <thead class="table-thead">
+                                                                                    <tr>
+                                                                                        <th>
+                                                                                            <span class="table-column-title">ID</span>
+                                                                                        </th>
+                                                                                        <th>
+                                                                                            <span class="table-column-title">Type</span>
+                                                                                        </th>
+                                                                                        <th>
+                                                                                            <span class="table-column-title">Title</span>
+                                                                                        </th>
+                                                                                        <th>
+                                                                                            <span class="table-column-title">Price</span>
+                                                                                        </th>
+                                                                                        <th>
+                                                                                            <span class="table-column-title">Status</span>
+                                                                                        </th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody class="table-tbody">
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                        <div class="table-placeholder">
+                                                                            <div class="empty-box -normal">
+                                                                                <div class="empty-icon"><i class="fas fa-inbox"></i></div>
+                                                                                <div class="empty-description">No Orders</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- Not empty table -->
+                                            <div class="col-12 col">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-tabs-col">
+                                                        <ul class="dashboard-tabs nav nav-tabs">
+                                                            <li class="active"><a href="#" role="tabs">Tab 1</a></li>
+                                                            <li><a href="#" role="tabs">Tab 2</a></li>
+                                                            <li><a href="#" role="tabs">Tab 3</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body tab-content">
+                                                            <div class="dashboard-card-container tab-pane active">
+                                                                <span class="dashboard-card-title card-title">Merchant Orders</span>
+                                                                <form method="POST" role="form">
+                                                                    <div class="table table-default mb-2">
+                                                                        <div class="table-content">
+                                                                                <div class="table-body table-responsive">
+                                                                                    <table cellspacing="0" width="100%">
+                                                                                        <thead class="table-thead">
+                                                                                            <tr>
+                                                                                                <th class="sorting -asc">
+                                                                                                    <span class="table-column-title">ID</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting -desc">
+                                                                                                    <span class="table-column-title">Type</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting">
+                                                                                                    <span class="table-column-title">Title</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting">
+                                                                                                    <span class="table-column-title">Price</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting">
+                                                                                                    <span class="table-column-title">Status</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th>
+                                                                                                    <span class="table-column-title"></span>
+                                                                                                </th>
+                                                                                                <th>
+                                                                                                    <span class="table-column-title">
+                                                                                                        <div class="custom-control custom-checkbox">
+                                                                                                            <input type="checkbox" class="custom-control-input selectall" id="check-select-all-3" name="selectall-3" data-checkbox-name="select-3">
+                                                                                                            <label class="custom-control-label" for="check-select-all-3"></label>
+                                                                                                        </div>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody class="table-tbody">
+                                                                                            <tr>
+                                                                                                <td>12345</td>
+                                                                                                <td>Test type</td>
+                                                                                                <td>Lorem ipsum</td>
+                                                                                                <td>12345 BTC</td>
+                                                                                                <td>W trakcie</td>
+                                                                                                <td>
+                                                                                                    <a href="#" class="btn-action"><span class="icon"></span></a>
+                                                                                                    <a href="#" class="btn-action"><span class="icon"></span></a>
+                                                                                                    <a href="#" class="btn-action"><span class="icon"></span></a>
+                                                                                                    <a href="#" class="btn-action"><span class="icon"></span></a>
+                                                                                                    <a href="#" class="btn-action"><span class="icon"></span></a>
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    <div class="custom-control custom-checkbox">
+                                                                                                        <input type="checkbox" class="custom-control-input checkme" id="checkbox1" data-select-all="selectall-3" name="select-3">
+                                                                                                        <label class="custom-control-label" for="checkbox1"></label>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>12345</td>
+                                                                                                <td>Test type</td>
+                                                                                                <td>Lorem ipsum</td>
+                                                                                                <td>12345 BTC</td>
+                                                                                                <td>W trakcie</td>
+                                                                                                <td class="table-links">
+                                                                                                    <a href="#" class="btn btn-action btn-success"><i class="fas fa-key"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-blue"><i class="fas fa-cube"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-blue"><i class="fas fa-comment"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-blue"><i class="fas fa-history"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-orange"><i class="fas fa-pencil-alt"></i></a>
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    <div class="custom-control custom-checkbox">
+                                                                                                        <input type="checkbox" class="select-1 custom-control-input checkme" id="checkbox2" data-select-all="selectall-3" name="select-3">
+                                                                                                        <label class="custom-control-label" for="checkbox2"></label>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div class="table-placeholder">
+                                                                                    <div class="table-actions d-flex justify-content-between flex-column flex-sm-row flex-wrap">
+                                                                                        <div class="table-selects d-flex my-2 mb-sm-0">
+                                                                                            <select name="" id="">
+                                                                                                <option value="">Option 1</option>
+                                                                                                <option value="">Option 2</option>
+                                                                                                <option value="">Option 3</option>
+                                                                                            </select>
+                                                                                            <select name="" id="">
+                                                                                                <option value="">Lorem ipsum dolor</option>
+                                                                                                <option value="">Option 2</option>
+                                                                                                <option value="">Option 3</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <button type="submit" class="btn btn-default btn-blue btn-md mx-auto mx-sm-0 mt-2">Submit</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="dashboard-card-container tab-pane">
+                                                                <span class="dashboard-card-title card-title">Merchant Orders 2</span>
+                                                                <form method="POST" role="form">
+                                                                    <div class="table table-default mb-2">
+                                                                        <div class="table-content">
+                                                                                <div class="table-body table-responsive">
+                                                                                    <table cellspacing="0" width="100%">
+                                                                                        <thead class="table-thead">
+                                                                                            <tr>
+                                                                                                <th class="sorting -asc">
+                                                                                                    <span class="table-column-title">ID</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting -desc">
+                                                                                                    <span class="table-column-title">Type</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting">
+                                                                                                    <span class="table-column-title">Title</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting">
+                                                                                                    <span class="table-column-title">Price</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th class="sorting">
+                                                                                                    <span class="table-column-title">Status</span>
+                                                                                                    <span class="icon-sorting">
+                                                                                                        <i class="fas fa-sort-up icon-asc"></i>
+                                                                                                        <i class="fas fa-sort-down icon-desc"></i>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                                <th>
+                                                                                                    <span class="table-column-title"></span>
+                                                                                                </th>
+                                                                                                <th>
+                                                                                                    <span class="table-column-title">
+                                                                                                        <div class="custom-control custom-checkbox">
+                                                                                                            <input type="checkbox" class="custom-control-input selectall" id="check-select-all-2" name="selectall-2" data-checkbox-name="select-2">
+                                                                                                            <label class="custom-control-label" for="check-select-all-2"></label>
+                                                                                                        </div>
+                                                                                                    </span>
+                                                                                                </th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody class="table-tbody">
+                                                                                            <tr>
+                                                                                                <td>56789</td>
+                                                                                                <td>Test type 2</td>
+                                                                                                <td>Lorem ipsum 2</td>
+                                                                                                <td>56789 BTC</td>
+                                                                                                <td>W trakcie 2</td>
+                                                                                                <td class="table-links">
+                                                                                                    <a href="#" class="btn btn-action btn-success"><i class="fas fa-key"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-blue"><i class="fas fa-cube"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-blue"><i class="fas fa-comment"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-blue"><i class="fas fa-history"></i></a>
+                                                                                                    <a href="#" class="btn btn-action btn-orange"><i class="fas fa-pencil-alt"></i></a>
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    <div class="custom-control custom-checkbox">
+                                                                                                        <input type="checkbox" class="select-2 custom-control-input checkme" id="checkbox12" data-select-all="selectall-2" name="select-2">
+                                                                                                        <label class="custom-control-label" for="checkbox12"></label>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>56789</td>
+                                                                                                <td>Test type 2</td>
+                                                                                                <td>Lorem ipsum 2</td>
+                                                                                                <td>56789 BTC</td>
+                                                                                                <td>W trakcie 2</td>
+                                                                                                <td></td>
+                                                                                                <td>
+                                                                                                    <div class="custom-control custom-checkbox">
+                                                                                                        <input type="checkbox" class="select-2 custom-control-input checkme" id="checkbox22" data-select-all="selectall-2" name="select-2">
+                                                                                                        <label class="custom-control-label" for="checkbox22"></label>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div class="table-placeholder">
+                                                                                    <div class="table-actions d-flex justify-content-between flex-column flex-sm-row flex-wrap">
+                                                                                        <div class="table-selects d-flex my-2 mb-sm-0">
+                                                                                            <select name="" id="">
+                                                                                                <option value="">Option 1</option>
+                                                                                                <option value="">Option 2</option>
+                                                                                                <option value="">Option 3</option>
+                                                                                            </select>
+                                                                                            <select name="" id="">
+                                                                                                <option value="">Lorem ipsum dolor</option>
+                                                                                                <option value="">Option 2</option>
+                                                                                                <option value="">Option 3</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <button type="submit" class="btn btn-default btn-blue btn-md mx-auto mx-sm-0 mt-2">Submit</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="dashboard-card-container tab-pane">
+                                                                <span class="dashboard-card-title card-title">Merchant Orders 3</span>
+                                                                <div class="table table-default table-empty">
+                                                                    <div class="table-content">
+                                                                        <div class="table-body table-responsive">
+                                                                            <table>
+                                                                                <thead class="table-thead">
+                                                                                    <tr>
+                                                                                        <th>
+                                                                                            <span class="table-column-title">ID</span>
+                                                                                        </th>
+                                                                                        <th>
+                                                                                            <span class="table-column-title">Type</span>
+                                                                                        </th>
+                                                                                        <th>
+                                                                                            <span class="table-column-title">Title</span>
+                                                                                        </th>
+                                                                                        <th>
+                                                                                            <span class="table-column-title">Price</span>
+                                                                                        </th>
+                                                                                        <th>
+                                                                                            <span class="table-column-title">Status</span>
+                                                                                        </th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody class="table-tbody">
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                        <div class="table-placeholder">
+                                                                            <div class="empty-box -normal">
+                                                                                <div class="empty-icon"><i class="fas fa-inbox"></i></div>
+                                                                                <div class="empty-description">No Orders</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- Border spinner -->
+                                            <div class="col-12 col-md-6 col">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body">
+                                                            <span class="dashboard-card-title card-title">Border spinner</span>
+                                                            <div class="d-flex justify-content-center text-center">
+                                                                <div class="spinner-border spinner" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Growing spinner -->
+                                            <div class="col-12 col-md-6 col">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body">
+                                                            <span class="dashboard-card-title card-title">Growing spinner</span>
+                                                            <div class="d-flex justify-content-center text-center">
+                                                                <div class="spinner-grow spinner" role="status">
+                                                                    <span class="sr-only">Loading...</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container-inner-box col -right">
+                                        <div class="row">
+                                            <!-- Orders Card -->
+                                            <div class="col -half">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body">
+                                                            <span class="dashboard-card-title card-title">Orders</span>
+                                                            <div class="order">
+                                                                <span class="count">0</span>
+                                                                <span class="sub-label">Today</span>
+                                                            </div>
+                                                            <div class="order">
+                                                                <span class="count">0</span>
+                                                                <span class="sub-label">This Month</span>
+                                                            </div>
+                                                            <div class="order">
+                                                                <span class="count">0</span>
+                                                                <span class="sub-label">All Time</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Currency Rates Card -->
+                                            <div class="col -half">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body">
+                                                            <span class="dashboard-card-title card-title">Currency Rates</span>
+                                                            <div class="currency-rate">
+                                                                <span class="title">BTC</span>
+                                                                <span class="rates">
+                                                                    <span>6,946.35 USD</span>
+                                                                    <span>6,946.35 USD</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="currency-rate">
+                                                                <span class="title">BTC</span>
+                                                                <span class="rates">
+                                                                    <span>6,946.35 USD</span>
+                                                                    <span>6,946.35 USD</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="currency-rate">
+                                                                <span class="title">BTC</span>
+                                                                <span class="rates">
+                                                                    <span>6,946.35 USD</span>
+                                                                    <span>6,946.35 USD</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="currency-rate">
+                                                                <span class="title">BTC</span>
+                                                                <span class="rates">
+                                                                    <span>6,946.35 USD</span>
+                                                                    <span>6,946.35 USD</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="currency-rate">
+                                                                <span class="title">BTC</span>
+                                                                <span class="rates">
+                                                                    <span>6,946.35 USD</span>
+                                                                    <span>6,946.35 USD</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- Billing Live Card -->
+                                            <div class="col-12 col">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body">
+                                                            <span class="dashboard-card-title card-title"><b>Billing</b> is live in beta</span>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                            <button type="button" class="btn btn-default btn-blue btn-md d-block mx-auto mb-2">Learn more</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- Refer Card -->
+                                            <div class="col-12 col">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body">
+                                                            <span class="dashboard-card-title card-title">Refer others and save on fees</span>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                            <button type="button" class="btn btn-default btn-blue btn-md d-block mx-auto mb-2">Create referral link</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- Top Currencies Card -->
+                                            <div class="col-12 col">
+                                                <div class="dashboard-card-box">
+                                                    <div class="dashboard-card card">
+                                                        <div class="dashboard-card-body card-body">
+                                                            <span class="dashboard-card-title card-title">Top Currencies</span>
+                                                            <div class="pb-3">
+                                                                <div class="empty-box -normal">
+                                                                    <div class="empty-icon"><i class="fas fa-inbox"></i></div>
+                                                                    <div class="empty-description">No Data</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                    <section class="content-footer d-flex justify-content-center flex-wrap">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <span>Coincher © 2020</span>
+                    </section>
+                </section>
+            </div>
+
+            <!-- Modals -->
+            <!-- Modal example 1 - scrollable content -->
+            <div class="modal fade" tabindex="-1" role="dialog" id="scrollableModal" aria-labelledby="scrollableModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="modal-title" id="scrollableModalLabel">Modal scrollable title</span>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-md btn-white" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-default btn-md btn-blue">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal example 2 - table content -->
+            <div class="modal fade tableModal" tabindex="-1" role="dialog" id="tableModal" aria-labelledby="tableModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="modal-title" id="tableModalLabel">Modal table title</span>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="table table-responsive">
+                                <table cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Title 1</th>
+                                            <th>Title 2</th>
+                                            <th>Title 3</th>
+                                            <th>Title 4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Test 1</td>
+                                            <td>Test 2</td>
+                                            <td>Test 3</td>
+                                            <td>Test 4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Test 5</td>
+                                            <td>Test 6</td>
+                                            <td>Test 7</td>
+                                            <td>Test 8</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-md btn-white" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-default btn-md btn-blue">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal example 3 - form content -->
+            <div class="modal fade formModal" tabindex="-1" id="formModal" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form method="POST" role="form">
+                            <div class="modal-header">
+                                <span class="modal-title" id="formModalLabel">Modal form title</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col">
+                                        <div class="form-group">
+                                            <label for="">Email address</label>
+                                            <input type="email" placeholder="Email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col">
+                                        <div class="form-group">
+                                            <label for="">Password</label>
+                                            <input type="password" placeholder="Password" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col">
+                                        <div class="form-group">
+                                            <label for="">File input</label>
+                                            <div class="input-group">
+                                                <div class="custom-file">
+                                                    <input type="file" placeholder="Email" class="custom-file-input">
+                                                    <label for="" class="custom-file-label">Choose file</label>
+                                                </div>
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">Upload</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default btn-md btn-white" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-default btn-md btn-blue">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+        <script type="text/javascript" src="js/img2svg.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+    </body>
+</html>
